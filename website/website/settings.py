@@ -119,3 +119,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# creates media directory in base app that stores files uploaded
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# what your browser uses for accessing files w http
+MEDIA_URL = '/media/'
